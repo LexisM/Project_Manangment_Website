@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+.container{
+	width: 100%;
+	overflow: auto;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+
 .p-1{padding: 10px;}
 .p-2{padding: 25px;}
 .p-3{padding: 40px;}
