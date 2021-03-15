@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+:root {
+  --main-green: #1A734A;
+  --dark-green:#014034;
+  --light-green: #3CA674;
+  --black:#0D0D0D;
+  --white:#FEFDFB;
+
+}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.hidden{
+	display:none;
+}
 
 .container{
 	width: 100%;
@@ -42,4 +59,32 @@
 .my-2{margin: 20px 0;}
 .my-3{margin: 30px 0;}
 .my-4{margin: 40px 0;}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: var(--main-green);
+	color: var(--white);
+	border:none;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	background-color: var(--white);
+	color: var(--dark-green)
+}
+
+.btn-outline{
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: transparent;
+	border:1px  var(--white) solid;
+	color: var(--white);
+}
+.btn-outline:hover{
+	transform: scale(0.98);
+}
+
 

@@ -44,8 +44,21 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.Element.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 
 
+function showmenu(){
+
+ 	let bm = document.querySelector(".nav");
+
+ 	if (bm.style.transform === "translateX(-190px)"){
+ 		
+ 		bm.style.transform = "translateX(0px)";
+ 	
+ 	}else{
+ 		bm.style.transform = "translateX(-190px)";
+
+ 	}
+}
