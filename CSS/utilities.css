@@ -28,6 +28,14 @@
 	align-items: center;
 }
 
+.menu_active a{
+	border-bottom: 3px solid var(--white);
+
+}
+.menu_active{
+	background-color: var(--main-green);
+
+}
 
 .p-1{padding: 10px;}
 .p-2{padding: 25px;}
@@ -38,6 +46,13 @@
 .py-2{padding: 20px 0;}
 .py-3{padding: 30px 0;}
 .py-4{padding: 40px 0;}
+.py-5{padding: 50px 0;}
+.py-6{padding: 60px 0;}
+.py-7{padding: 70px 0;}
+.py-8{padding: 80px 0;}
+
+
+
 
 
 .px-1{padding: 0 10px;}
@@ -59,6 +74,10 @@
 .my-2{margin: 20px 0;}
 .my-3{margin: 30px 0;}
 .my-4{margin: 40px 0;}
+.my-5{margin: 50px 0;}
+.my-6{margin: 60px 0;}
+.my-7{margin: 70px 0;}
+.my-8{margin: 80px 0;}
 
 .btn{
 	display: inline-block;

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>IRFU</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/9fee83fe28.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/utilities.css">
 	<link rel="stylesheet" type="text/css" href="CSS/main_style.css">
-	
+	<link rel="stylesheet" type="text/css" href="CSS/main_style.css">	
 	
 </head>
-<body>
+<body onload="slide()">
 <!------------------------------ Menu nav ------------->
 
 		<div class="show-menu hidden p-1 m-2" onclick="showmenu()"><i class="fas fa-bars"></i></div>
@@ -23,7 +23,7 @@
 					<a class="main_menu_link"  href="#">home</a>
 				</li>
 				<li class="item_menu mx-1">
-					<a class="main_menu_link" href="">About</a>
+					<a class="main_menu_link" href="HTML/about.html">About</a>
 				</li>
 				<li class="item_menu ucg mx-1">
 					<a class="main_menu_link" href="">Up Coming Games</a>
@@ -35,13 +35,31 @@
 					<a class="main_menu_link" href="">Newsletter</a>
 				</li>
 				<li class="item_menu mx-1">
-					<a class="main_menu_link" href="">Tickets</a>
+					<a class="main_menu_link" href="HTML/tickets.html">Tickets</a>
 				</li>
 				
 			</ul>
 
 			<div class="cart">
-				<i class="fas mx-2 my-2 fa-shopping-cart"></i>
+				<a href="#" onclick="ShowCartOFF()"><span class="qtyCart"></span><i class="fas mx-2 my-2 fa-shopping-cart"></i></a>
+				<div class="cart-items" onclick="ShowCartON()">
+					<div class="cart-box p-1">
+						<div class="cart-header flex">
+							<h3>Match</h3>
+							<h3>Category </h3>
+							<h3>Area </h3>
+							<h3>Quantity </h3>
+							<h3>Price</h3>
+							<h3>Total</h3>
+							<h3></h3>
+						</div>
+						<div class="tickets-info">
+							
+						</div>
+						
+						<button type="button">Check Out</button>
+					</div>
+				</div>
 			</div>
 
 			<div class="logo px-2"> 
@@ -209,5 +227,7 @@
 		</footer>
 	</div>
 <script type="text/javascript" src="JAVA/js_index.js"></script>
+<script type="text/javascript" src="JAVA/js_others.js"></script>
+
 </body>
 </html>

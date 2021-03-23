@@ -1,5 +1,7 @@
-function move(){
-	if (this.scrollY > this.innerHeight / 6){
+function slide(){
+	
+ window.addEventListener("scroll", function(){
+ 	if (this.scrollY > this.innerHeight / 6){
 		document.querySelector(".header_image").classList.remove("clip-up");
 
 			var element, name, arr;
@@ -21,11 +23,9 @@ function move(){
 		    element.className += " " + name;
 			}
 		}
+ });
 
-	
 }
- window.addEventListener("scroll", move);
-
 
 //Get the button:
 mybutton = document.querySelector(".go-top");
@@ -62,3 +62,15 @@ function showmenu(){
 
  	}
 }
+
+// function addCart(){
+
+// 	if (item == 0) {
+		
+
+// 	}else{
+// 		sessionStorage.setItem("keyQty",document.getElementById("".value));
+// 		sessionStorage.setItem("keyPrice",document.getElementById("".value));
+// 	}
+// }
+
