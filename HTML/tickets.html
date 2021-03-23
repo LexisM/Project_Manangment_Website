@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/9fee83fe28.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/utilities.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/main_style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/second-style.css">
+	
+</head>
+<body>
+<!------------------------------ Menu nav ------------->
+
+		<div class="show-menu hidden p-1 m-2" onclick="showmenu()"><i class="fas fa-bars"></i></div>
+
+		<nav class="nav flex" >
+
+			<ul class="menu_links flex">
+				<li class="item_menu mx-1">
+					<a class="main_menu_link"  href="../index.html">home</a>
+				</li>
+				<li class="item_menu mx-1">
+					<a class="main_menu_link" href="">About</a>
+				</li>
+				<li class="item_menu ucg mx-1">
+					<a class="main_menu_link" href="">Up Coming Games</a>
+				</li>
+				<li class=" item_menu mx-1">
+					<a class="main_menu_link" href="">Team</a>
+				</li>
+				<li class=" item_menu mx-1">
+					<a class="main_menu_link" href="">Newsletter</a>
+				</li>
+				<li class="item_menu mx-1 menu_active">
+					<a class="main_menu_link" href="">Tickets</a>
+				</li>
+				
+			</ul>
+
+			
+			<div class="cart">
+				<a href="#" onclick="ShowCartOFF()"><span class="qtyCart"></span><i class="fas mx-2 my-2 fa-shopping-cart"></i></a>
+				<div class="cart-items" onclick="ShowCartON()">
+					<div class="cart-box p-1">
+						<div class="cart-header flex">
+							<h3>Match</h3>
+							<h3>Category </h3>
+							<h3>Area </h3>
+							<h3>Quantity </h3>
+							<h3>Price</h3>
+							<h3>Total</h3>
+							<h3></h3>
+						</div>
+						<div class="tickets-info">
+							
+						</div>
+						
+						<button type="button">Check Out</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="logo px-2"> 
+				<img src="../IMG/logo.png" class="my-1" alt="">
+			</div>
+			
+		</nav>
+
+	<!-----------------------Header----------------->
+	<div class="container">
+		<header class="header header-tickets px-3 ">
+			<img class="header_image_tickets" src="../IMG/team1.jfif">
+		</header>
+	
+
+		<div class="box-tickets">
+
+			<button type="button" class="collapsible" onclick="toogle_stadium()">Check Aviva Stadium Category Map <span id="show-arrow"><i class="fas fa-chevron-down"></i> </span> </button>
+
+			<div class="content-stadium-map">
+				<img src="../IMG/aviva-stadium-map.jpg">
+			</div>
+
+			<button type="button" class="tickets-prices my-1" onclick="toogle_stadium()">Prices</button>
+			<div class="content-prices p-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				
+				<div class="p-3">
+					
+							<label>Match</label>
+							<select class="form-select" id="ticket_match">
+							  <option value="">Select Ticket</option>
+							  <option value="1">Match 1 </option>
+							  <option value="2">Match 2</option>
+							  <option value="3">Match 3</option>
+							  <option value="4">Match 4</option>
+
+							</select>
+						
+					<div class="flex">
+						
+							<label>Ticket Category : </label>
+							<select class="form-select mx-1" id="ticket_category">
+							  <option value="">Select Ticket Category</option>
+							  <option value="1">Premium</option>
+							  <option value="2">Cat 1</option>		  
+							  <option value="3">Cat 2</option>
+							  <option value="4">Cat 3</option>
+							  <option value="5">Cat 4</option>
+							  <option value="6">Box</option>
+							  <option value="7">VIP</option>
+							</select>
+						
+
+							<label> Area : </label>
+							<select class="form-select mx-1" id="ticket_area">
+							  <option value="">Select Area</option>
+							  <option value="north">North</option>
+							  <option value="east">East</option>
+							  <option value="south">South</option>
+							  <option value="west">West</option>
+
+							</select>
+						
+							<label> Quantity : </label>
+							<select class="form-select mx-1" id="ticket_quantity">
+							  <option  value="">0</option>
+							  <option value="1">1 Ticket</option>
+							  <option value="2">2 Tickets</option>
+							  <option value="3">3 Tickets</option>
+							  <option value="4">4 Tickets</option>
+							  <option value="5">5 Tickets</option>
+							</select>
+						
+					</div>
+
+					<button type="button" onclick="purchase()"> Purchase</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<!-- ----F O O T E R     A N D    B A C K    T O    T O P ------>
+	
+	<div class="go-top"  onclick="topFunction()" title="Go to top" > 
+		<i class="fas fa-arrow-up"></i>
+	</div>
+	<div class="footer container">
+		<footer class="py-1">
+			<div class="my-1">
+			
+				<img src="../IMG/logo.png">
+				<p>Copyright &copy; 2021</p>
+			</div>
+			<div class="social ">
+				<a href="#" class="mx-1"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="mx-1"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="mx-1"><i class="fab fa-youtube"></i></a>
+				<a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
+			</div>
+		</footer>
+	</div>
+
+<script type="text/javascript" src="../JAVA/js_index.js"></script>
+
+<script type="text/javascript" src="../JAVA/js_others.js"></script>
+
+</body>
+</html>
